@@ -6,7 +6,7 @@
   "module": "es2015",
   "scripts": {
     "start:multi": "cross-env MULTI=true ts-node ./index.ts",
-    "start": "ts-node ./index.ts",
+    "start:dev": "ts-node ./index.ts",
     "test": "node --test --require ts-node/register ./src/tests/test.ts"
   },
   "repository": {
