@@ -16,14 +16,9 @@ if (!multi) {
     if (cluster.isPrimary) {
         cluster.schedulingPolicy = cluster.SCHED_RR;
 
-        // Fork workers.
         for (let i = 0; i < cpus; i++) {
             cluster.fork({ PORT: port + i + 1 });
         }
-
-        cluster.on('exit', (worker, code, signal) => {
-            console.log(`worker ${worker.process.pid} died`);
-        });
     } else {
         server.listen(port);
     }
