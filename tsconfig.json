@@ -1,0 +1,13 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+  }
+}
